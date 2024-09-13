@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página HTML</title>
+    <script>
+        function redirigir() {
+            // Definir los enlaces
+            const enlaceA = 'https://https://shiftup-my.sharepoint.com/personal/se41942_stellantis_com/_layouts/15/doc.aspx?sourcedoc={10050792-c9b0-47c9-b0cb-392e043e9498}&action=edit';
+            const enlaceB = 'https://shiftup-my.sharepoint.com/personal/se41942_stellantis_com/_layouts/15/doc.aspx?sourcedoc={ef6793e2-951e-435e-8363-9859bf3958f4}&action=edit';
+
+            // Generar un número aleatorio entre 0 y 1
+            const aleatorio = Math.random();
+
+            // Redirigir basándose en la probabilidad
+            if (aleatorio < 0.20) {
+                // Redirige a Enlace A con 20% de probabilidad
+                window.location.href = enlaceA;
+            } else {
+                // Redirige a Enlace B con 80% de probabilidad
+                window.location.href = enlaceB;
+            }
+        }
+
+        // Ejecutar la función de redirección cuando la página cargue
+        window.onload = redirigir;
+    </script>
+</head>
+<body>
+    <p>Redirigiendo...</p>
+</body>
+</html>
